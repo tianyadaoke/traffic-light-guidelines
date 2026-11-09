@@ -11,7 +11,7 @@ Reuse the original process handle, task ID, or existing status summary. Agree on
 
 ## Act on the light
 
-- **YELLOW — Wait.** While the result is pending, wait on the same handle. If only polling is available, space checks by expected duration and urgency. Check when the result can change your next action, a deadline approaches, or the task appears stalled.
+- **YELLOW — Wait.** Prefer waiting for completion on the original handle. If you must poll, read compact status at intervals suited to the task. Read relevant logs if the task appears stalled.
 - **GREEN — Proceed.** Continue dependent steps after the task succeeds and the agreed checks pass.
 - **RED — Diagnose.** On task or check failure, pause dependent steps. Read the error summary and relevant log excerpt. Verify which completed work can be reused before retrying.
 
